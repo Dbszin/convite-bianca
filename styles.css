@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7e9fd;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+h1 {
+  color: #7b2cbf;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#yesButton {
+  background-color: #4caf50;
+  color: white;
+  position: relative;
+  z-index: 2; /* Garante que o SIM esteja acima do NÃO */
+}
+
+#noButton {
+  background-color: #f44336;
+  color: white;
+  position: relative;
+  z-index: 1; /* NÃO fica atrás do SIM, mas não interfere */
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.final-message {
+  font-size: 2rem;
+  color: #7b2cbf;
+  font-weight: bold;
+  text-align: center;
+}
