@@ -3,7 +3,7 @@ const yesButton = document.getElementById('yesButton');
 const container = document.querySelector('.container');
 
 // Limites para o "NÃO" aparecer em volta do centro
-const movementRadius = 400; // Define o raio ao redor do botão "SIM"
+const movementRadius = 200; // Define o raio ao redor do botão "SIM"
 
 noButton.addEventListener('mouseenter', () => {
     const centerX = yesButton.offsetLeft + yesButton.offsetWidth / 2;
